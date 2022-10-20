@@ -9,5 +9,13 @@
 </head>
 <body>
   <app-root></app-root>
+  <app-redirect></app-redirect>
+
+  <script>var checkExist = setInterval(function () {
+    if (window.isLoggedIn === true ) {
+     alert("Signed in");
+     clearInterval(checkExist);
+    }
+  }, 300);</script>
 </body>
 </html>
